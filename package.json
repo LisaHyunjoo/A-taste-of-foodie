@@ -1,0 +1,25 @@
+{
+  "name": "a-taste-of-foodie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisaHyunjoo/A-taste-of-foodie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisaHyunjoo/A-taste-of-foodie/issues"
+  },
+  "homepage": "https://github.com/LisaHyunjoo/A-taste-of-foodie#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
