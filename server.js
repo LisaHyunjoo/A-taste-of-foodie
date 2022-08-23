@@ -66,6 +66,21 @@ app.delete('/foodie/restaurant/:id', (req,res)=> {
     })
 })
 
+// edit a restaurant
+app.get('/foodie/restaurant/:id/edit', (req,res)=>{
+    Restaurant.findById(req.params.id, (err, foundRestaurant) => {
+        res.render('restoEdit.ejs', {
+            restaurant: foundRestaurant
+        })
+    })
+})
+
+// update
+app.put('/foodie/restaurant/:id', (req, res) => {
+    Restaurant.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err,updatedModel)=>{
+        res.redirect('/foodie/restaurant')
+    })
+})
 
 app.listen(3000, ()=>{
     console.log('Server is running on port 3000')
