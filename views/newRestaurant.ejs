@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>New Restaurant</h1>
+    <h1>Add a Restaurant</h1>
+    <form action="/foodie/restaurant" method="POST">
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="name" placeholder="Enter the restaurant's name">
+        <label for="location">location: </label>
+        <input id="location" type="text" name="location" placeholder="Enter the restaurant's location">
+        <label for="image">Image: </label>
+        <input id="image" type="text" name="image" placeholder="Add the restaurant's image">
+        <input type="submit" value="Add a restaurant">
+    </form>
 </body>
 </html>

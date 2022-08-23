@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <p>show Page</p>
+    <a href="/foodie/restaurant">Back to restaurant</a>
+    <ul>
+        <% for(let i=0; i<cuisine.length; i++) { %>
+            <li>
+                <%= cuisine[i].name%>
+                <%= cuisine[i].rating%>
+                <%= cuisine[i].comment%>
+                <%= cuisine[i].img %>
+            </li>
+        <%}%>
+    </ul>
+  
+    <a href="/foodie/restaurant/:id/new"><input type="submit" value="Add a new cuisine"></a>
 </body>
-</html>
+</html> 
