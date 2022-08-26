@@ -7,18 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/foodie/restaurant">Back to restaurant</a>
-    <ul>
-        <% for(let i=0; i<cuisine.length; i++) { %>
-            <li>
-                <%= cuisine[i].name%>
-                <%= cuisine[i].rating%>
-                <%= cuisine[i].comment%>
-                <%= cuisine[i].img %>
-            </li>
-        <%}%>
-    </ul>
-  
-    <a href="/foodie/restaurant/:id/new"><input type="submit" value="Add a new cuisine"></a>
+    <a href="/foodie">Back to restaurant</a>
+    <p>Name: <%= foodie.cuisine%></p>
+    <p>Rating: <%= foodie.rating%></p>
+    <p>Comment: <%= foodie.comment%></p>
+    <%=  foodie.img %>
+    <a href="/foodie/<%=foodie.id%>/edit"><input type="submit" value="EDIT"/></a>
+    <form action="/foodie/<%=foodie.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE">
+    </form>
 </body>
 </html> 

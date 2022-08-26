@@ -7,10 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Add a cuisine</h1>
-    <form action="/foodie/restaurant/:id" method="POST">
+    <h1>Add a restaurant and cuisines</h1>
+    <form action="/foodie" method="POST">
         <label for="name">Name: </label>
-        <input id="name" type="text" name="name" placeholder="Enter the food's name">
+        <input id="name" type="text" name="name" placeholder="Enter the restaurant's name">
+        <label for="location">location: </label>
+        <input id="location" type="text" name="location" placeholder="Enter the restaurant's location">
+        <label for="cuisine">Cuisine: </label>
+        <input id="cuisine" type="text" name="cuisine" placeholder="Enter the food's name">
         <label for="rating">Rating: </label>
         <input id="rating" type="number" name="rating" placeholder="Enter the food's rating">
         <label for="comment">Comment: </label>

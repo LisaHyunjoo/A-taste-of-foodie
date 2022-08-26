@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit a cuisine</h1>
+    <form action="/foodie/<%=foodie.id%>?_method=PUT" method="POST">
+        Name: <input id="name" type="text" name="name" value="<%=foodie.name%>">
+        Location: <input id="location" type="text" name="location" value="<%=foodie.location%>">
+        Cuisine:<input id="cuisine" type="text" name="cuisine"  value="<%=foodie.cuisine%>">
+        Rating:<input id="rating" type="text" name="rating"  value="<%=foodie.rating%>">
+        Comment:<input id="comment" type="text" name="comment"  value="<%=foodie.comment%>">
+        Image: <input id="image" type="text" name="image" >
+        <input type="submit" value="Edit a restaurant">
+    </form>
+</body>
+</html>

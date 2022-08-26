@@ -7,19 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Restaurants</h1>
+    <h1>A taste of foodie</h1>
     <ul>
-        <% for(let i=0; i<restaurants.length; i++) { %>
+        <% for(let i=0; i<foodies.length; i++) { %>
             <li>
-                <a href="/foodie/restaurant/<%=restaurants[i].id%>"><%= restaurants[i].name%></a></br>
-                Address: <%= restaurants[i].location%>
-                <a href="/foodie/restaurant/<%=restaurants[i].id%>/edit"><input type="submit" value="EDIT"/></a>
-                <form action="/foodie/restaurant/<%=restaurants[i].id%>?_method=DELETE" method="POST">
-                    <input type="submit" value="DELETE">
-                </form>
+                <h2><%= foodies[i].name%></h2>
+                <a href="/foodie/<%=foodies[i].id%>"><%= foodies[i].cuisine%></a></br>
+                <%= foodies[i].image%>
             </li>
         <%}%>
     </ul>
-    <a href="/foodie/restaurant/new"><input type="submit" value="Add a restaurant"></a>
+    <a href="/foodie/new"><input type="submit" value="Add a cuisine"></a>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=key&callback=initMap">
+    </script>
+    <script>
+        function initMap() {
+        // The location of Uluru
+        var DC = {
+            lat: 38.90697605842175,
+            lng: -77.03792762773466
+             
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+            zoom: 4,
+            center: DC
+            });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+            position: DC,
+            map: map
+        });
+        }
+    </script>
+
 </body>
 </html>
