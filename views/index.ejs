@@ -1,36 +1,14 @@
 <%- include('./partials/header.ejs') %>
-    <ul>
+<h1 class="title">A TASTE OF FOODIE</h1>
+    <ul class>
         <% for(let i=0; i<foodies.length; i++) { %>
-            <li>
+            <li class="foodie-list">
                 <h2><%= foodies[i].name%></h2>
                 <a href="/foodie/<%=foodies[i].id%>"><%= foodies[i].cuisine%></a></br>
                 <%= foodies[i].image%>
             </li>
         <%}%>
     </ul>
-    <a href="/foodie/new"><input type="submit" value="Add a cuisine"></a>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=key&callback=initMap">
-    </script>
-    <script>
-        function initMap() {
-        // The location of Uluru
-        var DC = {
-            lat: 38.90697605842175,
-            lng: -77.03792762773466
-             
-        };
-        // The map, centered at Uluru
-        var map = new google.maps.Map(
-            document.getElementById('map'), {
-            zoom: 4,
-            center: DC
-            });
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({
-            position: DC,
-            map: map
-        });
-        }
-    </script>
+    <a href="/foodie/new"><input type="submit" value="Add a cuisine" id="add-btn"></a>
+   
 <%- include('./partials/footer.ejs') %>

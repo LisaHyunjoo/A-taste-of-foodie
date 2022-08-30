@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+/* home, main page */
+body {
+    background-color: lavender;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.7)),url(/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+.header {
+    display: flex;
+    padding: 2% 6%; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text-box h1{
+    font-size: 80px;
+}
+
+.text-box p {
+    margin: 10px 0;
+    font-size: 30px;
+    color:#fff;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin:auto;
+    transition:0.5s;
+}
+
+nav ul li:hover::after {
+    width:100%;
+}
+
+/* register page */
+.register-h1{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+#register-form {
+    font-size: 20px;
+    width: 30%;
+    margin: 50px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    margin:20px auto;
+}
+
+#register-btn {
+    width: 80px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin:20px auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#register-btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* sign-in page */
+.sign-in-h1{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+#sign-in-form{
+    font-size: 20px;
+    width: 30%;
+    margin: 50px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    margin:20px auto;
+}
+
+#sign-in-btn{
+    width: 80px;
+    font-size: 15px;;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin:20px auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#sign-in-btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.form {
+    margin-top:10px;
+    padding:10px;
+}
+
+#input-p {
+    color: black;
+    size: 20px;
+}
+
+/* index page */
+.title {
+    margin-top: 100px;
+    font-size: 80px;
+}
+
+ul {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+ul li {
+    list-style: none;
+    font-size: 30px;
+    margin: 100px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+#add-btn{
+    width: 300px;
+    font-size: 30px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin:50px auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#add-btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* show page */
+#back-btn {
+   float:left
+}
+
+.list-detail{
+    font-size: 2em;
+    text-align: left;
+    margin: 50px;
+}
+
+#edit-btn {
+    width: 300px;
+    font-size: 30px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin:55px auto 0 auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#edit-btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+#delete-btn{
+    width: 300px;
+    font-size: 30px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin:25px auto 0 auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#delete-btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* new page */
+.new-h2{
+    font-size: 50px;
+}
+
+#new-form {
+    font-size: 20px;
+    width: 500px;;
+    margin: 50px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    margin:20px auto;  
+}
+
+.new-p{
+    color: black;
+    font-size: 20px;
+}
+
+#new-submit-btn {
+    width: 200px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin:50px auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+    
+}
+#new-submit-btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* edit page */
+.edit-h2 {
+    font-size: 50px;
+}
+
+#edit-form {
+    font-size: 20px;
+    width: 300px;
+    margin: 50px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    margin:20px auto;  
+}
+
+.edit-p{
+    color: black;
+    font-size: 20px;
+}
+
+#edit-submit-btn {
+    width: 200px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin:50px auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+    
+}
+#edit-submit-btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}

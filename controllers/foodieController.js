@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Foodie = require('../models/foodie.js')
 
+
 // index (list of restaurants)
 router.get('', (req, res) => {
     Foodie.find({}, (err, allFoodies)=>{

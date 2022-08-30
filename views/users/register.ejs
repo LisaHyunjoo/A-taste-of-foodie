@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration</title>
-</head>
-<body>
-    <h1>Register A new User</h1>
-    <form action="/user/register" method="POST">
-        <fieldset>
+<%- include('../partials/header.ejs') %>
+    <h1 class="register-h1">Become A Member</h1>
+    <form action="/user/register" method="POST" id="register-form">
+        <fieldset class="form">
             <label for="username">Username: </label>
-            <input type="text" name="username" >
+            <input type="text" name="username" id="input-p" >
         </fieldset>
-        <fieldset>
+        <fieldset class="form">
             <label for="password">Password: </label>
-            <input type="password" name="password" >
+            <input type="password" name="password" id="input-p" >
         </fieldset>
-        <input type="submit" value="Sign up"/>
+        <input type="submit" value="Sign up" id="register-btn"/>
     </form>
 </body>
 </html>
