@@ -1,6 +1,11 @@
 <%- include('./partials/header.ejs') %>
-    <a href="/foodie" id="back-btn">Back to restaurant</a>
-    <a href="/signout">Sign Out</a>
+<nav class="show-nav">
+    <ul>
+        <li> <a href="/foodie">Back to restaurant</a></li>
+        |
+        <li><a href="/user/signout">Sign Out</a></li>
+    </ul>
+</nav>
     <h1 class="title">A TASTE OF FOODIE</h1>
     <div class="list-detail">
         <p>Name: <%= foodie.cuisine%></p>

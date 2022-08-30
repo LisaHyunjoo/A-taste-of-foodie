@@ -1,6 +1,10 @@
 <%- include('./partials/header.ejs') %>
+<nav class="index-nav">
+    <a href="/user/signout" id="signout">Sign Out</a>
+</nav>
+
 <h1 class="title">A TASTE OF FOODIE</h1>
-    <ul class>
+    <ul class="index-list">
         <% for(let i=0; i<foodies.length; i++) { %>
             <li class="foodie-list">
                 <h2><%= foodies[i].name%></h2>

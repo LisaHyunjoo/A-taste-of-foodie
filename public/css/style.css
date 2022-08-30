@@ -8,7 +8,6 @@
 }
 /* home, main page */
 body {
-    background-color: lavender;
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.7)),url(/images/background.jpg);
@@ -30,7 +29,7 @@ body {
     width: 90%;
     color: #fff;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .text-box h1{
@@ -43,20 +42,20 @@ body {
     color:#fff;
 }
 
-nav ul li{
+.home-nav li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 12px 20px;
     position: relative;
 }
 
-nav ul li a {
+.home-nav li a {
     color: #fff;
     text-decoration: none;
     font-size: 30px;
 }
 
-nav ul li::after {
+.home-nav li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -66,7 +65,7 @@ nav ul li::after {
     transition:0.5s;
 }
 
-nav ul li:hover::after {
+.home-nav li:hover::after {
     width:100%;
 }
 
@@ -88,7 +87,7 @@ nav ul li:hover::after {
 }
 
 #register-btn {
-    width: 80px;
+    width: 100px;
     font-size: 15px;
     background-color: transparent;
     border: 2px solid #fff;
@@ -112,6 +111,7 @@ nav ul li:hover::after {
 }
 
 #sign-in-form{
+   
     font-size: 20px;
     width: 30%;
     margin: 50px;
@@ -121,8 +121,12 @@ nav ul li:hover::after {
     margin:20px auto;
 }
 
+input {
+    background-color: rgb(245,245,241)
+}
+
 #sign-in-btn{
-    width: 80px;
+    width: 100px;
     font-size: 15px;;
     background-color: transparent;
     border: 2px solid #fff;
@@ -148,12 +152,20 @@ nav ul li:hover::after {
 }
 
 /* index page */
+.index-nav{
+    background-color: rgb(15, 130, 59);
+    font-size: 20px;;
+    width: 150px;
+    float: right;
+   
+}
+
 .title {
     margin-top: 100px;
     font-size: 80px;
 }
 
-ul {
+.index-list {
     display: flex;
     flex-direction:row;
     justify-content:space-around;
@@ -162,17 +174,17 @@ ul {
    
 }
 
-ul li {
+.index-list li {
     list-style: none;
     font-size: 30px;
     margin: 100px;
 }
 
-ul li a {
+.index-list li a {
     text-decoration: none;
 }
 
-ul li a:hover {
+.index-list li a:hover {
     color: black;
     background-color: white;
     cursor: pointer;
@@ -196,14 +208,47 @@ ul li a:hover {
 }
 
 /* show page */
-#back-btn {
-   float:left
+.show-nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 20px;
+    /* position: relative; */
+    margin-top: 50px;
+    /* float: right; */
+   
 }
+
+.show-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+
+.show-nav li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin:auto;
+    transition:0.5s;
+}
+
+.show-nav li:hover::after {
+    width:100%;
+}
+
+
 
 .list-detail{
     font-size: 2em;
     text-align: left;
     margin: 50px;
+}
+
+.show-p{
+    text-align: center;
 }
 
 #edit-btn {
@@ -240,14 +285,14 @@ ul li a:hover {
 
 /* new page */
 .new-h2{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #new-form {
     font-size: 20px;
     width: 500px;;
     margin: 50px;
-    padding: 10px;
+    padding: 20px;
     display:flex;
     flex-direction: column;
     margin:20px auto;  
@@ -256,6 +301,8 @@ ul li a:hover {
 .new-p{
     color: black;
     font-size: 20px;
+    margin: 10px;
+    padding: 5px;
 }
 
 #new-submit-btn {
@@ -291,7 +338,7 @@ ul li a:hover {
 }
 
 .edit-p{
-    color: black;
+    color: gray;
     font-size: 20px;
 }
 
