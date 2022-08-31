@@ -238,7 +238,7 @@ input {
     margin: 50px auto;
 }
 
-.index-title{
+.show-title{
     font-size: 80px;
 }
 
@@ -320,6 +320,7 @@ input {
 
 #list-detail {
     font-size: 1.2em;
+    text-align: center;
 }
 
 .new-title {
