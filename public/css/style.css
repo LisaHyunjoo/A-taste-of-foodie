@@ -37,7 +37,7 @@ body {
 
 .text-box p {
     margin: 10px 0;
-    font-size: 30px;
+    font-size: 40px;
     color:#fff;
 }
 
@@ -117,7 +117,6 @@ input {
 
 /* index page */
 .index-nav {
-    /* background-color: green; */
     display: flex;
     justify-content: flex-end;
     margin: 50px;
@@ -162,11 +161,6 @@ input {
     font-size: 30px;
     margin: 70px;
     text-align: center;
-    /* width: 20%;
-    flex-grow:1;
-    margin:25px;
-    align-items: center;
-    justify-content: center; */
 }
 
 .index-list li a {
@@ -244,13 +238,12 @@ input {
     margin: 50px auto;
 }
 
-.show-title{
+.index-title{
     font-size: 80px;
 }
 
 
 /* new page */
-
 .new-title {
     text-align: center;
     font-size: 80px;
@@ -281,5 +274,64 @@ input {
     text-align: center;
 }
 
+@media (max-width: 600px) {
+    .text-box h1{
+        font-size: 60px;
+    }
 
+.home-page {
+    justify-content: space-around;
+}
 
+.text-box p {
+    font-size: 25px;
+}
+
+.home-nav li a {
+    font-size: 25px;
+}
+
+.user-form {
+    width: 50%;
+}
+
+#index-title {
+    font-size: 40px;
+}
+
+.index-list li {
+    font-size: 20px;
+}
+
+.show-nav {
+    margin: 0;
+}
+
+.show-title {
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+#upload-btn {
+    width: 150px;
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+#list-detail {
+    font-size: 1.2em;
+}
+
+.new-title {
+    font-size: 40px;
+    margin-top: 30px;;
+}
+
+.new-h2 {
+    font-size: 20px;
+}
+
+#new-form {
+    width: 300px;
+}
+}
