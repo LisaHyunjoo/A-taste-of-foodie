@@ -11,7 +11,7 @@ Decide what to eat tonight with your own review.
 
 <img src= "https://user-images.githubusercontent.com/106201650/187795083-6c9f3b02-7206-48b7-8e0e-08cb59b86c8e.png" width="1500"><br>
 
-2. Create your foodi list. 
+2. Create your foodie list. 
 
 <img src="https://user-images.githubusercontent.com/106201650/187794840-efde6f66-1144-4510-b47a-420c0e57c1b8.png" width="1500"><br>
 
