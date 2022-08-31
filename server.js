@@ -7,7 +7,7 @@ const session = require('express-session')
 const app = express()
 
 require('dotenv').config()
-const PORT=process.env.PORT
+const PORT=process.env.PORT 
 const SESSION_SECRET = process.env.SESSION_SECRET
 
 const mongoURI = process.env.MONGODB_URI

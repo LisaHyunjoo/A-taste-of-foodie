@@ -9,11 +9,20 @@
     <label for="cuisine">Cuisine: </label>
     <input id="cuisine" type="text" name="cuisine" placeholder="Enter the food's name" class="new-p">
     <label for="rating">Rating: </label>
-    <input id="rating" type="number" name="rating" placeholder="Enter the food's rating" class="new-p">
+        <select name="rating" id="rating" class="new-p">
+            <option value="1" >⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
     <label for="comment">Comment: </label>
-    <input id="comment" type="text" name="comment" placeholder="Enter the comment" class="new-p">
-    <label for="img">Image: </label>
-    <input id="img" type="text" bidenname="img" placeholder="Add the food's image" >
+    <textarea id="comment" name="comment" placeholder="Enter the comment" class="new-p"></textarea>      
+    <!-- <form action="/foodie/new" method="POST" enctype="multipart/form-data" id="new-form">    
+        <label for="img">Image: </label>
+        <input id="img" type="file" name="img" placeholder="Add the food's image" class="new-p" >
+        <button type="submit" name="upload">Upload</button>
+    </form> -->
     <input type="submit" value="Add a cuisine" id="new-submit-btn">
 </form>
 </body>

@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const Foodie = require('../models/foodie.js')
+const upload = require('../uploadMiddleware');
+const Resize = require('../Resize');
 
 
 // index (list of restaurants)
@@ -32,6 +34,17 @@ router.post('', (req,res)=>{
         res.redirect('/foodie')
     })
 })
+
+// router.post('/new', upload.single('image'), async function (req, res) {
+//     const imagePath = path.join(__dirname, '/public/images');
+//     const fileUpload = new Resize(imagePath);
+//     if (!req.file) {
+//       res.status(401).json({error: 'Please provide an image'});
+//     }
+//     const filename = await fileUpload.save(req.file.buffer);
+//     return res.status(200).json({ name: filename });
+//   });
+
 
 // delete 
 router.delete('/:id', (req,res)=> {

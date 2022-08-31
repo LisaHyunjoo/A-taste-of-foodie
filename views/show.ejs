@@ -6,15 +6,18 @@
         <li><a href="/user/signout">Sign Out</a></li>
     </ul>
 </nav>
+<div class="container">
     <h1 class="title">A TASTE OF FOODIE</h1>
-    <div class="list-detail">
+    <div id="list-detail">
         <p>Name: <%= foodie.cuisine%></p>
         <p>Rating: <%= foodie.rating%></p>
         <p>Comment: <%= foodie.comment%></p>
-        <%=  foodie.img %>
+    
     </div>
     <a href="/foodie/<%=foodie.id%>/edit"><input type="submit" value="EDIT" id="edit-btn"></a>
     <form action="/foodie/<%=foodie.id%>?_method=DELETE" method="POST">
         <input type="submit" value="DELETE" id="delete-btn">
     </form>
+</div>
+
 <%- include('./partials/footer.ejs') %>
