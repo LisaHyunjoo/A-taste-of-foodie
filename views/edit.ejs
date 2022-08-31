@@ -1,13 +1,19 @@
 <%- include('./partials/header.ejs') %>
-    <h1 class="title">A TASTE OF FOODIE</h1>
-    <h2 class="edit-h2">Edit a cuisine</h2>
-    <form action="/foodie/<%=foodie.id%>?_method=PUT" method="POST" id="edit-form">
-        Name: <input id="name" type="text" name="name" value="<%=foodie.name%>" class="edit-p">
-        Location: <input id="location" type="text" name="location" value="<%=foodie.location%>"class="edit-p">
-        Cuisine:<input id="cuisine" type="text" name="cuisine"  value="<%=foodie.cuisine%>" class="edit-p">
-        Rating:<input id="rating" type="text" name="rating"  value="<%=foodie.rating%>" class="edit-p">
-        Comment:<input id="comment" type="text" name="comment"  value="<%=foodie.comment%>" class="edit-p">
-        Image: <input id="image" type="text" name="image" >
-        <input type="submit" value="Edit" id="edit-submit-btn">
+<nav class="show-nav">
+    <ul>
+        <li> <a href="/foodie">Back to restaurant</a></li>
+        |
+        <li><a href="/user/signout">Sign Out</a></li>
+    </ul>
+</nav>
+    <h1 class="new-title">A TASTE OF FOODIE</h1>
+    <h2 class="new-h2">Edit a cuisine</h2>
+    <form action="/foodie/<%=foodie.id%>?_method=PUT" method="POST" id="new-form">
+        Name: <input id="name" type="text" name="name" value="<%=foodie.name%>" class="new-p">
+        Location: <input id="location" type="text" name="location" value="<%=foodie.location%>"class="new-p">
+        Cuisine:<input id="cuisine" type="text" name="cuisine"  value="<%=foodie.cuisine%>" class="new-p">
+        Rating:<input id="rating" type="text" name="rating"  value="<%=foodie.rating%>" class="new-p">
+        Comment:<input id="comment" type="text" name="comment"  value="<%=foodie.comment%>" class="new-p">
+        <input type="submit" value="Edit" id="upload-btn">
     </form>
 <%- include('./partials/footer.ejs') %>

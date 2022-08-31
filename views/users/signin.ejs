@@ -1,15 +1,15 @@
 <%- include('../partials/header.ejs') %>
-    <h1 class="sign-in-h1">Sign In</h1>
-    <form action="/user/signin" method="POST" id="sign-in-form">
-        <fieldset class="form">
+    <h1 class="user-title">Sign In</h1>
+    <form action="/user/signin" method="POST" class="user-form">
+        <fieldset id="user-input">
             <label for="username">Username: </label>
             <input type="text" name="username" id="input-p">
         </fieldset>
-        <fieldset class="form">
+        <fieldset id="user-input">
             <label for="password">Password: </label>
             <input type="password" name="password" id="input-p">
         </fieldset>
-        <input type="submit" value="Sign In" id="sign-in-btn"/>
+        <input type="submit" value="Sign In" id="user-btn"/>
     </form>
 </body>
 </html>

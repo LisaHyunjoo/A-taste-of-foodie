@@ -1,9 +1,10 @@
 <%- include('./partials/header.ejs') %>
-<nav class="index-nav">
+<div class="index-nav">
     <a href="/user/signout" id="signout-btn">Sign Out</a>
-</nav>
-
-<h1 class="title">A TASTE OF FOODIE</h1>
+</div>
+    
+<div class="container">
+    <h1 id="index-title">A TASTE OF FOODIE</h1>
     <ul class="index-list">
         <% for(let i=0; i<foodies.length; i++) { %>
             <li class="foodie-list">
@@ -13,6 +14,8 @@
             </li>
         <%}%>
     </ul>
-    <a href="/foodie/new"><input type="submit" value="Add a cuisine" id="add-btn"></a>
+    <a href="/foodie/new"><input type="submit" value="Add a cuisine" id="upload-btn"></a>
+</div>
+
    
 <%- include('./partials/footer.ejs') %>

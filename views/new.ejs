@@ -1,29 +1,32 @@
 <%- include('./partials/header.ejs') %>
-<h1 class="title">A TASTE OF FOODIE</h1>
-<h2 class="new-h2">Add a restaurant and cuisines</h2>
-<form action="/foodie" method="POST" id="new-form">
-    <label for="name">Name: </label>
-    <input id="name" type="text" name="name" placeholder="Enter the restaurant's name" class="new-p">
-    <label for="location">location: </label>
-    <input id="location" type="text" name="location" placeholder="Enter the restaurant's location" class="new-p">
-    <label for="cuisine">Cuisine: </label>
-    <input id="cuisine" type="text" name="cuisine" placeholder="Enter the food's name" class="new-p">
-    <label for="rating">Rating: </label>
-        <select name="rating" id="rating" class="new-p">
-            <option value="1" >⭐</option>
-            <option value="2">⭐⭐</option>
-            <option value="3">⭐⭐⭐</option>
-            <option value="4">⭐⭐⭐⭐</option>
-            <option value="5">⭐⭐⭐⭐⭐</option>
-        </select>
-    <label for="comment">Comment: </label>
-    <textarea id="comment" name="comment" placeholder="Enter the comment" class="new-p"></textarea>      
-    <!-- <form action="/foodie/new" method="POST" enctype="multipart/form-data" id="new-form">    
-        <label for="img">Image: </label>
-        <input id="img" type="file" name="img" placeholder="Add the food's image" class="new-p" >
-        <button type="submit" name="upload">Upload</button>
-    </form> -->
-    <input type="submit" value="Add a cuisine" id="new-submit-btn">
+<%- include('./partials/header.ejs') %>
+<nav class="show-nav">
+    <ul>
+        <li> <a href="/foodie">Back to restaurant</a></li>
+        |
+        <li><a href="/user/signout">Sign Out</a></li>
+    </ul>
+</nav>
+    <h1 class="new-title">A TASTE OF FOODIE</h1>
+    <h2 class="new-h2">Add a restaurant and cuisines</h2>
+    <form action="/foodie" method="POST" id="new-form">
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="name" placeholder="Enter the restaurant's name" class="new-p">
+        <label for="location">location: </label>
+        <input id="location" type="text" name="location" placeholder="Enter the restaurant's Address" class="new-p">
+        <label for="cuisine">Cuisine: </label>
+        <input id="cuisine" type="text" name="cuisine" placeholder="Enter the food's name" class="new-p">
+        <label for="rating">Rating: </label>
+            <select name="rating" id="rating" class="new-p">
+                <option value="1" >⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+        <label for="comment">Comment: </label>
+        <textarea id="comment" name="comment" placeholder="Enter your comment" class="new-p"></textarea>      
+        <input type="submit" value="Add a cuisine" id="upload-btn">
 </form>
 </body>
 </html>

@@ -1,15 +1,15 @@
 <%- include('../partials/header.ejs') %>
-    <h1 class="register-h1">Become A Member</h1>
-    <form action="/user/register" method="POST" id="register-form">
-        <fieldset class="form">
+    <h1 class="user-title">Become A Member</h1>
+    <form action="/user/register" method="POST" class="user-form">
+        <fieldset id="user-input">
             <label for="username">Username: </label>
             <input type="text" name="username" id="input-p" >
         </fieldset>
-        <fieldset class="form">
+        <fieldset id="user-input">
             <label for="password">Password: </label>
             <input type="password" name="password" id="input-p" >
         </fieldset>
-        <input type="submit" value="Sign up" id="register-btn"/>
+        <input type="submit" value="Sign up" id="user-btn"/>
     </form>
 </body>
 </html>

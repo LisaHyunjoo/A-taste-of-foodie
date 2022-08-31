@@ -3,7 +3,6 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    /* text-align: center; */
     color: #fff;
 }
 /* home, main page */
@@ -16,7 +15,7 @@ body {
     position:relative;
 }
 
-.header {
+.home-page {
     display: flex;
     padding: 2% 6%; 
     justify-content: center;
@@ -69,14 +68,14 @@ body {
     width:100%;
 }
 
-/* register page */
-.register-h1{
+/* register, sign-in page */
+.user-title{
     text-align: center;
     font-weight: 600;
     margin-top: 100px;
 }
 
-#register-form {
+.user-form {
     font-size: 20px;
     width: 30%;
     margin: 50px;
@@ -86,7 +85,22 @@ body {
     margin:20px auto;
 }
 
-#register-btn {
+#user-input {
+    margin-top:10px;
+    padding:10px;
+    text-align: center;
+}
+
+input {
+    background-color: rgb(245,245,241);
+}
+
+#input-p {
+    color: black;
+    size: 20px;
+}
+
+#user-btn {
     width: 100px;
     font-size: 15px;
     background-color: transparent;
@@ -95,82 +109,45 @@ body {
     padding: 5px 10px;
     border-radius: 20px;
 }
-
-#register-btn:hover {
+#user-btn:hover {
     color: black;
     background-color: white;
     cursor: pointer;
-}
-
-
-/* sign-in page */
-.sign-in-h1{
-    text-align: center;
-    font-weight: 600;
-    margin-top: 100px;
-}
-
-#sign-in-form{
-   
-    font-size: 20px;
-    width: 30%;
-    margin: 50px;
-    padding: 10px;
-    display:flex;
-    flex-direction: column;
-    margin:20px auto;
-}
-
-input {
-    background-color: rgb(245,245,241)
-}
-
-#sign-in-btn{
-    width: 100px;
-    font-size: 15px;;
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin:20px auto;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
-#sign-in-btn:hover {
-    color: black;
-    background-color: white;
-    cursor: pointer;
-}
-
-.form {
-    margin-top:10px;
-    padding:10px;
-}
-
-#input-p {
-    color: black;
-    size: 20px;
 }
 
 /* index page */
-.index-nav{
-    background-color: rgb(15, 130, 59);
-    font-size: 20px;;
-    width: 150px;
-    float: right;
+.index-nav {
+    /* background-color: green; */
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+
+}
+
+.index-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
    
 }
 
-#signout-btn{
-    margin-top:100px;
+.index-nav ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin:auto;
+    transition:0.5s;
 }
 
-.title {
-    margin-top: 50px;
-    font-size: 80px;
-    /* margin: 50px auto; */
-    text-align: center;
+.index-nav :hover::after {
+    width:100%;
 }
 
+#index-title{
+    font-size: 80px;;
+}
 .index-list {
     display: flex;
     flex-direction:row;
@@ -183,7 +160,8 @@ input {
 .index-list li {
     list-style: none;
     font-size: 30px;
-    margin: 100px;
+    margin: 70px;
+    text-align: center;
     /* width: 20%;
     flex-grow:1;
     margin:25px;
@@ -201,18 +179,18 @@ input {
     cursor: pointer;
 }
 
-
-#add-btn{
-    width: 300px;
-    font-size: 30px;
+#upload-btn{
+    width: 200px;
+    font-size: 20px;
     background-color: transparent;
     border: 2px solid #fff;
-    margin:50px auto;
+    margin: 20px  auto;
     padding: 5px 10px;
     border-radius: 20px;
+    
 }
 
-#add-btn:hover {
+#upload-btn:hover {
     color: black;
     background-color: white;
     cursor: pointer;
@@ -222,15 +200,14 @@ input {
 .show-nav{
     display: flex;
     justify-content: flex-end;
+    margin-right: 30px;
 }
 .show-nav li{
     list-style: none;
     display: inline-block;
     padding: 12px 20px;
-    /* position: relative; */
     margin-top: 50px;
-    /* float: right; */
-   
+    font-size: 20px;
 }
 
 .show-nav li a {
@@ -255,7 +232,6 @@ input {
 }
 
 .container {
-    /* outline:2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,41 +244,22 @@ input {
     margin: 50px auto;
 }
 
-#edit-btn {
-    width: 300px;
-    font-size: 30px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin:55px auto 0 auto;
-    padding: 5px 10px;
-    border-radius: 20px;
+.show-title{
+    font-size: 80px;
 }
 
-#edit-btn:hover {
-    color: black;
-    background-color: white;
-    cursor: pointer;
-}
-
-#delete-btn{
-    width: 300px;
-    font-size: 30px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin:25px auto 0 auto;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
-#delete-btn:hover {
-    color: black;
-    background-color: white;
-    cursor: pointer;
-}
 
 /* new page */
+
+.new-title {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 70px;
+    
+}
 .new-h2{
     font-size: 40px;
+    text-align: center;
 }
 
 #new-form {
@@ -313,6 +270,7 @@ input {
     display:flex;
     flex-direction: column;
     margin:20px auto;  
+    text-align: center;
 }
 
 .new-p{
@@ -320,66 +278,8 @@ input {
     font-size: 20px;
     margin: 10px;
     padding: 5px;
-}
-
-#new-upload-btn {
-    width: 200px;
-    font-size: 20px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin:50px auto;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
-#new-submit-btn {
-    width: 200px;
-    font-size: 20px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin:50px auto;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-#new-submit-btn:hover {
-    color: black;
-    background-color: white;
-    cursor: pointer;
+    text-align: center;
 }
 
 
-/* edit page */
-.edit-h2 {
-    font-size: 50px;
-}
 
-#edit-form {
-    font-size: 20px;
-    width: 300px;
-    margin: 50px;
-    padding: 10px;
-    display:flex;
-    flex-direction: column;
-    margin:20px auto;  
-}
-
-.edit-p{
-    color: gray;
-    font-size: 20px;
-}
-
-#edit-submit-btn {
-    width: 200px;
-    font-size: 20px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin:50px auto;
-    padding: 5px 10px;
-    border-radius: 20px;
-    
-}
-#edit-submit-btn:hover {
-    color: black;
-    background-color: white;
-    cursor: pointer;
-}
