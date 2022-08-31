@@ -1,5 +1,4 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const methodOveride = require('method-override')
 const mongoose = require('mongoose')
 const session = require('express-session')
@@ -17,13 +16,10 @@ mongoose.connection.once('open', ()=>{
 })
 
 app.use(express.static('public'))
-app.set('view engine', 'ejs')
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(methodOveride('_method'))
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}))
 app.use(session({
         secret:SESSION_SECRET,
         resave:false,

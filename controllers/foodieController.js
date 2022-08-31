@@ -1,9 +1,6 @@
 const express = require('express')
 const router = express.Router()
 const Foodie = require('../models/foodie.js')
-const upload = require('../uploadMiddleware');
-const Resize = require('../Resize');
-
 
 // index (list of restaurants)
 router.get('', (req, res) => {
