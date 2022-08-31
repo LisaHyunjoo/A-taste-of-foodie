@@ -7,13 +7,13 @@
 Decide what to eat tonight with your own review.
 `A taste of foodie` is here to help you!
 
-1. Register or Sign in to start.
+1. Register or Sign in to start.<br>
 <img src= "https://user-images.githubusercontent.com/106201650/187795083-6c9f3b02-7206-48b7-8e0e-08cb59b86c8e.png" width="1500"><br>
 
-2. Create your foodi list. 
+2. Create your foodi list. <br>
 <img src="https://user-images.githubusercontent.com/106201650/187794840-efde6f66-1144-4510-b47a-420c0e57c1b8.png" width="1500"><br>
 
-3. You can find your dine-out experience anytime.
+3. You can find your dine-out experience anytime. <br>
 <img src="https://user-images.githubusercontent.com/106201650/187794947-6616e8d2-a35c-4574-a6e6-995b4b093e42.png" width="1500"><vr>
 
 
