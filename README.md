@@ -2,7 +2,7 @@
 
 * Can't choose what to have for dinner tonight?
 * Want to eat out in a nice place, but don't know where to go? 
-* Don't remember what was deilicious cuisine of restaurant where you've beem?
+* Don't remember what was delicious cuisine of a restaurant where you've been?
 
 Decide what to eat tonight with your own review.
 `A taste of foodie` is here to help you!
